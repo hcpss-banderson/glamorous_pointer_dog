@@ -1,0 +1,14 @@
+{
+    "name": "hcpss/glamorour-pointer-dog",
+    "description": "Project name generator",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "HCPSS\\": "src/"
+        }
+    }
+}

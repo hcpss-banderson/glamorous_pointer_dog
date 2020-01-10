@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: reg.hcpss.org/gpd/web
+    build:
+      context: .
+      dockerfile: ./docker/web/Dockerfile
+    volumes:
+      - ./app:/var/www/html
+      - ./db.sqlite:/srv/sqlite3/db.sqlite
+    ports:
+      - 8099:80
